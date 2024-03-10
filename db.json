@@ -1,0 +1,70 @@
+{
+  "users": [
+    {
+      "id": "US001",
+      "userName": "MindX"
+    },
+    {
+      "id": "US002",
+      "useName": "Nobi Nobita"
+    },
+    {
+      "id": "US4aa05988-a553-4234-a41d-b0243d80271d",
+      "userName": "PAK"
+    }
+  ],
+  "posts": [
+    {
+      "id": "PS001",
+      "content": "I am Iron-man!!!",
+      "authorId": "US001"
+    },
+    {
+      "id": "PS62b5d525-2872-47e9-bf3e-e30e2edcb381",
+      "content": "TEST",
+      "authorId": "US001"
+    },
+    {
+      "id": "PSbf406402-982d-4bc1-b54e-dba6e48c6150",
+      "content": "CREATE-TEST-II",
+      "authorId": "US002"
+    },
+    {
+      "id": "PS3bfc2589-3a06-4b0c-a6bd-ebde1d50012e",
+      "content": "I am Iron-man!!!",
+      "authorId": "US4aa05988-a553-4234-a41d-b0243d80271d"
+    }
+  ],
+  "comments": [
+    {
+      "id": "CMT001",
+      "content": "Bài học này rất ý nghĩa! Cảm ơn MindX!",
+      "postId": "PS001",
+      "authorId": "US002"
+    },
+    {
+      "id": "CMT2f28745d-f8e4-4b43-a94d-24bbb7920414",
+      "content": "COMMENT-TEST",
+      "postId": "PS62b5d525-2872-47e9-bf3e-e30e2edcb381",
+      "authorId": "US4aa05988-a553-4234-a41d-b0243d80271d"
+    },
+    {
+      "id": "CMTff0d7ad7-5f22-4b9f-b4ec-59eb6f9a0a94",
+      "content": "TEST-UPDATE",
+      "postId": "PS001",
+      "authorId": "US4aa05988-a553-4234-a41d-b0243d80271d"
+    },
+    {
+      "id": "CMT58fc71ca-3734-493b-9cf6-37f63452a5cd",
+      "content": "COMMENT2",
+      "postId": "PS001",
+      "authorId": "US4aa05988-a553-4234-a41d-b0243d80271d"
+    },
+    {
+      "id": "CMT3cf7772a-fa17-40a2-9101-b5a62b949f99",
+      "content": "COMMENT3",
+      "postId": "PS001",
+      "authorId": "US4aa05988-a553-4234-a41d-b0243d80271d"
+    }
+  ]
+}

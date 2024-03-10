@@ -1,0 +1,26 @@
+{
+  "name": "lesson-03-json-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"nodemon server.js\" \"json-server --watch db.json\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "fs": "^0.0.1-security",
+    "json-server": "^1.0.0-alpha.23",
+    "lodash": "^4.17.21",
+    "uuidv4": "^6.2.13"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0"
+  }
+}
