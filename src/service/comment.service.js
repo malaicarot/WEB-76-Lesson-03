@@ -64,18 +64,21 @@ async function updateComment(commentId, userId, commentNeedFix) {
 async function getFirstComments(post) {
 
     const comment = await getAllComment();
-    const firstCommentOfThree = null;
-    var n = 3;
-    
-        for(var key in post){
-            console.log(key)
-            for(var i = 0; i < n; i++){
-                post[key] += comment[i];
-            }
-        }
 
-    // const commentByPostId = comment.filter(item => item.postId === postId);
-    return JSON.stringify(post);
+    const postWithComments = post.map((post) =>{
+        const postComments = comment.filter((comment) => {
+            comment.postId === post.id
+        })
+
+        const firstThreeComments = postComments.slice(0, 3);
+
+        return { ...post, comments: firstThreeComments };
+    })
+    
+
+
+    return postWithComments;
+    
 }
 
 function commentIdGenerator(){
